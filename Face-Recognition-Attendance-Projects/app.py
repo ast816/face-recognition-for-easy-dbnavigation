@@ -6,6 +6,7 @@ import streamlit as st
 
 
 # Naming all the three pages
+
 PAGES = {
     "Home": Home,
     "Hello New User": Hello,

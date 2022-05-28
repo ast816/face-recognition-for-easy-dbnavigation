@@ -1,6 +1,6 @@
 import streamlit as st
 import pyodbc
-
+import datetime
 # Establishing Connectivity with azure SQL database
 server = 'asthasql.database.windows.net'
 database = 'sql_facerecog'
@@ -25,29 +25,29 @@ def app():
     # Take inputs
     buff, col,= st.columns([6,6])
 
-    input1=buff.text_input('Enter your name',placeholder='Name goes here')
+    input1=buff.text_input('Name',placeholder='Name')
 
-    input2=buff.text_input('Enter Adhaar Card Number',placeholder='XXXX XXXX XXXX XXXX')
+    input2=buff.text_input('Aadhaar Card Number',placeholder='XXXX XXXX XXXX')
 
-    input3=buff.text_input('Enter Driving License Number','')
+    input3=buff.text_input('Driving License Number','')
 
-    input4=buff.date_input("Enter DOB")
+    input4=buff.date_input("DOB", (datetime.date(1900,1,1),datetime.datetime.now()))
 
-    input5=buff.text_input('Enter PAN',placeholder='XXXXXXXXXX')
+    input5=buff.text_input('PAN',placeholder='XXXXXXXXXX')
 
-    input6=col.date_input("Last Covid Test Date")
+    input6=col.date_input("Last Covid Test Date",(datetime.date(2019,1,1),datetime.datetime.now()))
 
-    input7=col.selectbox("Test Result",('Positive','Negative'),)
+    input7=col.selectbox("Covid Test Result",('Positive','Negative'),)
 
     input8=col.selectbox("Gender",('Male','Female','Other'),)
 
-    input9=col.text_input("Email", placeholder='someone@gmail.com')
+    input9=col.text_input("Email", placeholder='xxxxxx@email.com')
 
-    input10=col.text_input("Enter Mobile Number",placeholder="+91XXXXXXXXXX")
+    input10=col.text_input("Mobile Number",placeholder="XXXXXXXXXX")
 
     a,b,c,= st.columns([6,3,6])
 
-    submitclick=b.button("Submit")
+    submitclick=b.button("SUBMIT")
    
     # Insert data to database on clicking submit button and show balloons
     if submitclick:
