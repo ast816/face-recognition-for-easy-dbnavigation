@@ -1,4 +1,5 @@
 import cv2
+from cv2 import VideoCapture
 import numpy as np
 import face_recognition
 import os
@@ -7,7 +8,8 @@ import pyodbc
 import time
 import pickle
 from imutils import paths
-import argparse as args
+import json
+
 
 server = 'asthasql.database.windows.net'
 database = 'sql_facerecog'
@@ -18,13 +20,11 @@ driver= '{ODBC Driver 17 for SQL Server}'
 cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
 cursor = cnxn.cursor()
 
-ap = args.ArgumentParser()
 
-
-PIK = "pickle.dat"
 
 
 # append all images in image list and names in classNames
+
 path = 'Face-Recognition-Attendance-Projects\Training_images'
 images = []
 classNames = []
@@ -35,6 +35,9 @@ for cl in myList:
     images.append(curImg)
     classNames.append(os.path.splitext(cl)[0])
 print(classNames)
+
+
+
 
 #encode all images and save it in encodelist
 def findEncodings(images):
@@ -61,16 +64,20 @@ def showdb(name):
 encodeListKnown = findEncodings(images)
 print('Encoding Complete')
 
-# serialising encodings
-print(" serializing encodings...")
-data = {"encodings": encodeListKnown, "names": classNames}
-f = open(PIK, "wb")
-f.write(pickle.dumps(data))
-f.close()
-#switch on webcam and capture image
-cap = cv2.VideoCapture(0)
+
+# print(" serializing encodings...")
+# with open('dataset_faces.dat', 'wb') as f:
+#     data= {"encodings":encodeListKnown,"Names":classNames}
+#     pickle.dump(data, f)
+
+
+
+    
+
 
 #cap is read and stored in img
+cap=VideoCapture(0)
+
 t_end = time.time() + 25
 while time.time() < t_end:
     success, img = cap.read()

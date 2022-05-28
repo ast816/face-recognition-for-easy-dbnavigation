@@ -1,1 +1,9 @@
- imgS = cv2.resize(img, (0, 0), None, 0.25, 0.25)
+print("serialising encodings")
+# print(" serializing encodings...")
+# out_file = open("myfile.json", "wb")
+# data= {"encodings":encodeListKnown,"Names":classNames}
+# json.dump(data, out_file)
+  
+# out_file.close()
+
+ 
