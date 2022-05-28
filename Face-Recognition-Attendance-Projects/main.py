@@ -3,14 +3,12 @@ from cv2 import VideoCapture
 import numpy as np
 import face_recognition
 import os
-from datetime import datetime
 import pyodbc
 import time
-import pickle
-from imutils import paths
-import json
 
 
+
+# establishing connectivity with my azure SQL server
 server = 'asthasql.database.windows.net'
 database = 'sql_facerecog'
 username = 'azureadmin'
@@ -82,7 +80,7 @@ t_end = time.time() + 25
 while time.time() < t_end:
     success, img = cap.read()
 
-#resize and convertcolor
+#resize and convert color
     imgS = cv2.resize(img, (0, 0), None, 0.25, 0.25)
     imgS = cv2.cvtColor(imgS, cv2.COLOR_BGR2RGB)
 

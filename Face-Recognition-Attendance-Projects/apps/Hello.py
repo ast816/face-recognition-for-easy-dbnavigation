@@ -1,7 +1,7 @@
 import streamlit as st
 import pyodbc
 
-
+# Establishing Connectivity with azure SQL database
 server = 'asthasql.database.windows.net'
 database = 'sql_facerecog'
 username = 'azureadmin'
@@ -11,16 +11,18 @@ driver= '{ODBC Driver 17 for SQL Server}'
 cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
 cursor = cnxn.cursor()
 
+# function to add data to the azure database
 def add_data(input1,input2,input3,input4,input5,input6,input7,input8,input9,input10):
     cursor.execute('INSERT INTO DETAILS VALUES(?,?,?,?,?,?,?,?,?,?)',(input1,input2,input3,input4,input5,input6,input7,input8,input9,input10))
     cnxn.commit()
+
 
 def app():
     st.title('Hello New User')
     st.header('Add your Details')
     
     
-   
+    # Take inputs
     buff, col,= st.columns([6,6])
 
     input1=buff.text_input('Enter your name',placeholder='Name goes here')
@@ -46,7 +48,8 @@ def app():
     a,b,c,= st.columns([6,3,6])
 
     submitclick=b.button("Submit")
-
+   
+    # Insert data to database on clicking submit button and show balloons
     if submitclick:
         add_data(input1,input2,input3,input4,input5,input6,input7,input8,input10,input9)
         st.balloons()

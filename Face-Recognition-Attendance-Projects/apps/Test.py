@@ -2,19 +2,17 @@
 import streamlit as st
 import cv2
 from streamlit_webrtc import webrtc_streamer, RTCConfiguration
-import pandas as pd
 import numpy as np
 import av
 import os
 from PIL import Image
-import pickle
-import face_recognition
 
 
 def app():
     st.title('Test Model')
     st.header('Upload your Image and Test the Model ')
-
+    
+    # Image uploader
     image_file = st.file_uploader("Upload Image", type=['jpg', 'png', 'jpeg'])
     
     # Load face encodings
@@ -28,10 +26,11 @@ def app():
 
 
     @st.cache
+    # loading image uploaded
     def load_image(image_file):
         img=Image.open(image_file)
         return img
-
+    # Get file details and store the uploaded file in Training Image path
     if image_file is not None:
         file_details = {"FileName": image_file.name,
                         "FileType": image_file.type}
@@ -85,7 +84,7 @@ def app():
 
 
 
-        
+     # Class to process output of webcam in frame
     class VideoProcessor:
         def recv(self, frame):
             frm = frame.to_ndarray(format="bgr24")
@@ -93,7 +92,7 @@ def app():
             
 
             return av.VideoFrame.from_ndarray(frm, format='bgr24')
-
+    # Webcam functionality
     webrtc_streamer(key="key", video_processor_factory=VideoProcessor, rtc_configuration=RTCConfiguration(
         {"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]}
     ))
