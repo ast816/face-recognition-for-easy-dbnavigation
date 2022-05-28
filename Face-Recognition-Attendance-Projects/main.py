@@ -68,7 +68,7 @@ print('Encoding Complete')
 # print(" serializing encodings...")
 # with open('dataset_faces.dat', 'wb') as f:
 #     data= {"encodings":encodeListKnown,"Names":classNames}
-#     pickle.dump(data, f)
+#     pickle.dump(data, f, pickle.HIGHEST_PROTOCOL)
 
 
 
