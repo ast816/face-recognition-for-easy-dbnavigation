@@ -103,7 +103,7 @@ pip install -r /path/to/requirements.txt
 ```
 streamlit run app.py
 ```
-* 
+
 <!-- APP TUTORIAL-->
 ## Navigating Through The App
 ### Home
@@ -122,7 +122,7 @@ Home Page appears as soon as you launch the web-application. You can check out t
 <img src="" alt="Details printed" width="700"/>
 <!-- ACKNOWLEDGEMENTS -->
 ## Resources Used
-* [Streamlit](https://streamlit.io/)
-* [Face_recognition](https://pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/)
-* [Face recognition based Streamlit Application](https://www.youtube.com/watch?v=p80IQSNf7LU&t=1837s)
+* 1)[Streamlit](https://streamlit.io/)
+* 2)[Face_recognition](https://pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/)
+* 3)[Face recognition based Streamlit Application](https://www.youtube.com/watch?v=p80IQSNf7LU&t=1837s)
 
