@@ -60,9 +60,10 @@
 
 ### Techstacks
 
-* [ML-Model](https://img.shields.io/badge/ML%20Model-Python%20and%20various%20Modules--face__recognition%2Copencv--python%2CPillow%20and%20others-blue)
-* [Front-end-and-Back-end](https://img.shields.io/badge/Front--end--and--Back--end-Streamlit%20--Open%20Source%20Framework%20to%20create%20Webapps-blue)
-* [Database](https://img.shields.io/badge/Database-Microsoft%20Azure%20SQL%20Server-blue)
+* [
+ML Model-Python and various Modules-face_recognition,opencv-python,Pillow and others](https://img.shields.io/badge/ML%20Model-Python%20and%20various%20Modules--face__recognition%2Copencv--python%2CPillow%20and%20others-blue)
+* [Frontend and backend -Streamlit -Open Source Framework to create Webapps](https://img.shields.io/badge/Front--end--and--Back--end-Streamlit%20--Open%20Source%20Framework%20to%20create%20Webapps-blue)
+* [Database-Microsoft Azure SQL Server](https://img.shields.io/badge/Database-Microsoft%20Azure%20SQL%20Server-blue)
 
 <!-- AGILE METHODOLOGY -->
 ## Agile Methodology
