@@ -80,7 +80,7 @@ To install and run the project on your local system, following are the requireme
 
 ### Prerequisites
 * 1)[Download Python 3.10.4](https://www.python.org/ftp/python/3.10.4/python-3.10.4-amd64.exe)
-* 2) [Visual Studio Code or any other IDE](https://code.visualstudio.com/)
+* 2)[Visual Studio Code or any other IDE](https://code.visualstudio.com/)
 * 3)Ensure you have [Visual Studio Community 2019](https://visualstudio.microsoft.com/downloads/) with Desktop Development in C++
 * 4)Ensure you have the following extensions
 * a) Python v2022.6.2 IntelliSense (Pylance), Linting, Debugging (multi-threaded, remote), Jupyter Notebooks, code formatt
@@ -109,15 +109,15 @@ streamlit run app.py
 Home Page appears as soon as you launch the web-application. You can check out the project description and User Manual here
 <img src="" alt="Home screen" width="700"/>
 ### Hello New User
-New users can enter their details and click on the submit button, they shall be greeted with balloons when submission is successful.
+* New users can enter their details and click on the submit button, they shall be greeted with balloons when submission is successful.
 <img src="" alt="Hello New User screen" width="700"/>
-All the users details get stored in the azure SQL Database
+* All the users details get stored in the azure SQL Database
 ### Test Model
-Users can now upload their recent photograph here. Once saved Successfully they shall be prompted about the same
+* Users can now upload their recent photograph here. Once saved Successfully they shall be prompted about the same
 <img src="" width="700"/>
-They can then choose to turn on their webcam locally and their face gets recognised
+* They can then choose to turn on their webcam locally and their face gets recognised
 <img src="" alt="face recognised" width="700"/>
-Details of the recognised person are displayed, If another person is in front of webcam then their details are printed if they are saved in database
+* Details of the recognised person are displayed, If another person is in front of webcam then their details are printed if they are saved in database
 <img src="" alt="Details printed" width="700"/>
 <!-- ACKNOWLEDGEMENTS -->
 ## Resources Used
@@ -125,6 +125,6 @@ Details of the recognised person are displayed, If another person is in front of
 * [Face_recognition](https://pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/)
 * [Face recognition based Streamlit Application](https://www.youtube.com/watch?v=p80IQSNf7LU&t=1837s)
 <!--MARKDOWN LINKS-->
-[ml-shield]: https://img.shields.io/badge/Front--end-React%20JS%2C%20Material--UI-blueviolet](https://img.shields.io/badge/ML%20Model-Python%20and%20various%20Modules--face__recognition%2Copencv--python%2CPillow%20and%20others-blue
-[back-and-front-end-shield]: [https://img.shields.io/badge/Back--end-Node%20JS%2C%20Express%2C%20socket.io-blueviolet](https://img.shields.io/badge/Front--end--and--Back--end-Streamlit%20--Open%20Source%20Framework%20to%20create%20Webapps-blue
-[database-shield]: https://img.shields.io/badge/Tools-Peer%20JS%2C%20webRTC-blueviolet](https://img.shields.io/badge/Database-Microsoft%20Azure%20SQL%20Server-blue
+[ml-shield]: (https://img.shields.io/badge/Front--end-React%20JS%2C%20Material--UI-blueviolet](https://img.shields.io/badge/ML%20Model-Python%20and%20various%20Modules--face__recognition%2Copencv--python%2CPillow%20and%20others-blue)
+[back-and-front-end-shield]: (https://img.shields.io/badge/Back--end-Node%20JS%2C%20Express%2C%20socket.io-blueviolet](https://img.shields.io/badge/Front--end--and--Back--end-Streamlit%20--Open%20Source%20Framework%20to%20create%20Webapps-blue)
+[database-shield]: (https://img.shields.io/badge/Tools-Peer%20JS%2C%20webRTC-blueviolet](https://img.shields.io/badge/Database-Microsoft%20Azure%20SQL%20Server-blue)
