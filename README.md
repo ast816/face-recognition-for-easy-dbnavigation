@@ -60,9 +60,9 @@
 
 ### Techstacks
 
-* ![ML-Model][ml-shield]
-* ![Front-end-and-Back-end][back-and-front-end-shield]
-* ![Database][database-shield]
+* [ML-Model](https://img.shields.io/badge/ML%20Model-Python%20and%20various%20Modules--face__recognition%2Copencv--python%2CPillow%20and%20others-blue)
+* [Front-end-and-Back-end](https://img.shields.io/badge/Front--end--and--Back--end-Streamlit%20--Open%20Source%20Framework%20to%20create%20Webapps-blue)
+* [Database](https://img.shields.io/badge/Database-Microsoft%20Azure%20SQL%20Server-blue)
 
 <!-- AGILE METHODOLOGY -->
 ## Agile Methodology
@@ -124,7 +124,4 @@ Home Page appears as soon as you launch the web-application. You can check out t
 * [Streamlit](https://streamlit.io/))
 * [Face_recognition](https://pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/)
 * [Face recognition based Streamlit Application](https://www.youtube.com/watch?v=p80IQSNf7LU&t=1837s)
-<!--MARKDOWN LINKS-->
-[ml-shield]: (https://img.shields.io/badge/Front--end-React%20JS%2C%20Material--UI-blueviolet](https://img.shields.io/badge/ML%20Model-Python%20and%20various%20Modules--face__recognition%2Copencv--python%2CPillow%20and%20others-blue)
-[back-and-front-end-shield]: (https://img.shields.io/badge/Back--end-Node%20JS%2C%20Express%2C%20socket.io-blueviolet](https://img.shields.io/badge/Front--end--and--Back--end-Streamlit%20--Open%20Source%20Framework%20to%20create%20Webapps-blue)
-[database-shield]: (https://img.shields.io/badge/Tools-Peer%20JS%2C%20webRTC-blueviolet](https://img.shields.io/badge/Database-Microsoft%20Azure%20SQL%20Server-blue)
+
